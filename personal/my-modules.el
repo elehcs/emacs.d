@@ -65,6 +65,17 @@
 (provide 'helm-gtags)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Install highlight-symbol
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(prelude-require-packages '(highlight-symbol))
+(require 'highlight-symbol)
+(global-set-key [(control f5)] 'highlight-symbol-at-point)
+(global-set-key [f5] 'highlight-symbol-next)
+(global-set-key [(shift f5)] 'highlight-symbol-prev)
+(global-set-key [(meta f5)] 'highlight-symbol-query-replace)
+(global-set-key [f6] 'highlight-symbol-remove-all)
 
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; End of my modules
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
