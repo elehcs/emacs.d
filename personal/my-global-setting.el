@@ -30,7 +30,19 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Ignore case if completion target string doesn't include upper characters
+;; (setq ac-ignore-case 'smart)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Evil settings
+;;(define-key evil-insert-state-map (kbd ",,") 'evil-change-to-previous-state)
+;;(define-key evil-normal-state-map (kbd ",,") 'evil-force-normal-state)
+;;(define-key evil-replace-state-map (kbd ",,") 'evil-normal-state)
+;;(define-key evil-visual-state-map (kbd ",,") 'evil-exit-visual-state)
+
+;; kill word
+;; (global-set-key "M-SPC" 'backward-kill-word)
+
 
 ;;; my-global-setting.el ends here
